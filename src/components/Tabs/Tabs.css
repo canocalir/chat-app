@@ -1,0 +1,65 @@
+.panel {
+    display: none;
+    padding: 20px 30px 30px;
+    background: #fff;
+  }
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .input {
+    position: absolute;
+    opacity: 0;
+  }
+  .label {
+    width: 100%;
+    padding: 10px 33px;
+    background: #e5e5e5;
+    cursor: pointer;
+    font-size: 14px;
+    color: #7f7f7f;
+    border-radius: 4px;
+    transition: background 0.1s, color 0.1s;
+  }
+  .label:hover {
+    background: #d8d8d8;
+  }
+  .label:active {
+    background: #ccc;
+  }
+  .input:focus + .label {
+    z-index: 1;
+  }
+  .input:checked + .label {
+    background: #fff;
+    color: #000;
+  }
+  @media (min-width: 600px) {
+    .label {
+      width: 93px;
+      height: 30px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  .panel {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 15px 30px;
+    background: #fff;
+  }
+  @media (min-width: 600px) {
+    .panel {
+      width:290px;
+      order: 99;
+    }
+  }
+  .input:checked + .label + .panel {
+    display: block;
+  }
+  
