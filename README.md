@@ -1,3 +1,5 @@
+# Websocket Chat App
+
 ## How to use
 
 In the project directory, you can run:
