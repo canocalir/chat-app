@@ -10,13 +10,12 @@ margin-top: 1px;
 `;
 
 export default class MessageBox extends Component {
-    constructor(){
-        super();
-        this.state = {
+
+       state = {
             message: '',
           }
         
-    }
+    
     render() {
         return (
       <form

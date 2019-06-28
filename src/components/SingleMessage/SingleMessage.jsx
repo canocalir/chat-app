@@ -22,7 +22,7 @@ const SngMessage = styled.p`
 `;
 
 const EditBox = styled.input`
-  width: 150px;
+  width: 135px;
 `;
 
 export default class SingleMessage extends Component {
@@ -78,7 +78,8 @@ export default class SingleMessage extends Component {
     if(this.state.isDelete === false) {
       return <SngMessage 
       style={{marginTop:"0px"}}>
-        <Name>{this.props.name}</Name>  <Time>{this.props.time}</Time>
+        <Name>{this.props.name}</Name> 
+        <Time>{this.props.time}</Time>
         <br/>
        {message} 
       </SngMessage>

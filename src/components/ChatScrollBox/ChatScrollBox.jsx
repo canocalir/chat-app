@@ -64,6 +64,7 @@ export default class ChatScrollBox extends Component {
           addMessage = (message) => {
             
     this.setState(state => ({ messages: [message, ...state.messages] }))
+    
   }
 
   submitMessage = (messageString) => {
